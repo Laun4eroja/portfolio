@@ -197,7 +197,7 @@ html, body {
 /* Header */
 
 .header {
-    height: calc(100vh - 81px);
+    height: 100vh;
     padding: 40px 0;
 
     display: flex;
@@ -333,7 +333,6 @@ html, body {
 .copiright p + p {
     margin-top: 0.5em;
 }
-
 
 
 
