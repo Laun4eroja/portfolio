@@ -12,6 +12,7 @@ font-family: 'Poppins', sans-serif;
     --black-nav: #111;
     --white: #fff;
     --red: #ed213a;
+    --gray: #ddd;
 
     --text-color: var(--black);
 
@@ -20,6 +21,7 @@ font-family: 'Poppins', sans-serif;
     --dark-nav: var(--black-nav);
     --header-text: var(--white);
     --accent: var(--red);
+    --accent-bg: var(--gray);
 }
 
 html, body {
@@ -47,6 +49,7 @@ html, body {
 
 .main {
     padding: 70px 0;
+    background-color: var(--accent-bg);
 }
 
 .title-1 {
@@ -355,6 +358,39 @@ html, body {
     line-height: 1.3;
 }
 
+
+/* Contacts */
+
+.content__list {
+	margin: 0 auto;
+	max-width: 570px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 40px;
+	text-align: center;
+}
+
+.content__list a {
+	color: var(--accent);
+}
+
+.content__list-item {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.content__list-item p + p {
+	margin-top: 0.5em;
+}
+
+.content__list-title {
+    margin-bottom: 10px;
+
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.3;
+}
 
 
 /* Footer */
