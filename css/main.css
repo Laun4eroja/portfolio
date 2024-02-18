@@ -40,6 +40,7 @@ html, body {
 }
 
 .logo {
+    margin-right: auto;
     width: 200px;
 }
 
@@ -205,7 +206,8 @@ html, body {
 .nav__row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 30px;
 }
 
 .nav ul {
@@ -242,6 +244,49 @@ html, body {
     height: 2px;
     width: 100%;
     background-color: var(--accent);
+}
+
+
+/* Dark mode btn */
+
+.dark-mode-btn {
+    order: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    width: 51px;
+    height: 26px;
+    padding: 5px;
+
+    border-radius: 50px;
+    background-color: #272727;
+}
+
+.dark-mode-btn::before {
+    content: '';
+
+    position: absolute;
+    top: 1px;
+    left: 1px;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+    background-color: var(--white);
+
+    transition: left 0.3s ease-in;
+}
+
+.dark-mode-btn--active::before {
+    left: 26px;
+}
+
+.dark-mode-btn__icon {
+    position: relative;
+    z-index: 9;
 }
 
 
@@ -302,6 +347,7 @@ html, body {
 
 .projects {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -446,6 +492,10 @@ html, body {
     .burger {
         display: flex;
     }
+    .nav__row {
+        justify-content: space-between;
+        gap: 10px;
+    }
     .nav__row ul {
         display: none;
         flex-direction: column;
@@ -467,5 +517,8 @@ html, body {
     }
     .nav__link--active::before {
         display: none;
+    }
+    .dark-mode-btn {
+        order: 0;
     }
 }
