@@ -9,7 +9,10 @@ document.querySelector('.burger').onclick = function() {
 };
 
 const btnDarkMode = document.querySelector('.dark-mode-btn');
+const main = document.querySelector('.main');
+const dark = document.querySelector('.dark');
 
 btnDarkMode.onclick = function() {
     btnDarkMode.classList.toggle('dark-mode-btn--active');
+    main.classList.toggle('dark');
 }
